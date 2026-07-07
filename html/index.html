@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>MovieDex</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-elements">
+        <div class="logo">
+          <h1>MovieDex</h1>
+        </div>
+         <div class="search-bar">
+                <input type="search" placeholder="Search..." id="userInput">
+                <img src="/assets/search-icon.svg" alt="Search" class="search-icon" id="search">
+            </div>
+        <div class="signin-buttons">
+          <button id="signinBtn"><a href="/html/signin.html">SignIn</a></button>
+          <button id="signupBtn"><a href="/html/signup.html">SignUp</a></button>
+          <button id="logoutBtn" style="display:none;">
+    Logout
+  </button>
+        </div>
+      </div>
+      <div class="navigation-bar">
+        <ul class="navigation-menu">
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <!-- <li><a href="#">Genre</a></li> -->
+          <li><a href="#topRatedBtn">Trending</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="page-one">
+        <div class="banner">
+          <img alt="Movie Poster" class="banner-movie-image" id="bannerImage" />
+          <div class="banner-movie-details">
+            <h1 class="banner-movie-title" id="bannerTitle">Movie Title</h1>
+            <p class="banner-movie-caption" id="bannerDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              veniam provident nemo iure enim cupiditate porro? Voluptatum quas
+              totam tempore.
+            </p>
+          </div>
+        </div>
+        <div class="banner-movie-buttons">
+          <button class="watch-trailer-btn">Watch Trailer</button>
+          <!-- <button class="book-tickets">Book Tickets</button> -->
+        </div>
+      </div>
+      <div  class="page-two">
+        <div class="top-bar" id="movies">
+          <button id="nowPlayingBtn">Now Playing</button>
+          <button id="popularBtn">Popular</button>
+          <button id="topRatedBtn">Top Rated</button>
+          <button id="upcomingBtn">Upcoming</button>
+        </div>
+        <div class="card-section" id="cardSection">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-elements">
+        <div class="footer-logo">
+          <h1>MovieDex</h1>
+        </div>
+        <div class="footer-content">
+          <div class="footer-links">
+            <!-- <p>Home | Movies | Trending | Top Rated | Upcoming | Login</p> -->
+            <p>© 2026 MovieDex | Powered by TMDB API</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/scripts/config.js"></script>
+<script src="/scripts/script.js"></script>
+  </body>
+</html>

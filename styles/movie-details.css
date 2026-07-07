@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #110e0e;
+  color: #fff;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  overflow: hidden;
+  height: 90%;
+  width: 90%;
+  border: 2px solid rgb(36, 36, 49);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 300px;
+  gap: 10px;
+}
+
+.movie-image {
+  grid-column: span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-image img {
+  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+  /* border: 1px solid red; */
+}
+
+.movie-details {
+  grid-column: span 2;
+  /* padding: 10px; */
+}
+
+.details {
+  height: 100%;
+  width: 70%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.title-wrapper {
+  line-height: 30px;
+}
+.title-wrapper h2 {
+  font-size: 2rem;
+}
+.title-wrapper p {
+  font-size: 0.9rem;
+}
+.desc-wrapper {
+  line-height: 20px;
+}
+
+.movie-desc {
+  margin-top: 10px;
+}
+
+.p {
+  margin-top: 10px;
+}
+
+.btns {
+  margin-top: 20px;
+}
+
+.watch-trailer-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.cast-details {
+  grid-column: span 3;
+}
+/* .content-child{
+    background-color: rgb(59, 84, 84);
+} */
+
+/* Cast */
+
+.cast-details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.title {
+  /* border-top: 1px solid rgb(36, 36, 49); */
+  border-bottom: 1px solid rgb(36, 36, 49);
+  font-size: 1rem;
+}
+
+.c-details {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+  scrollbar-width: none;
+}
+
+.c-details::-webkit-scrollbar {
+  display: none;
+}
+
+.cast-image {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.cast-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
