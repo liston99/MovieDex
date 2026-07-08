@@ -1,5 +1,4 @@
 const signInForm = document.getElementById("signInForm");
-// const userName = document.getElementById("userName");
 const userEmail = document.getElementById("email");
 const userPassword = document.getElementById("password");
 const signUpStatus = document.getElementById("signupStatus");

@@ -14,14 +14,12 @@ const castContainer = document.querySelector(".c-details");
 
 async function fetchMovieDetails() {
   try {
-    // Movie details request
     const movieResponse = await fetch(
       `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`
     );
 
     const movieData = await movieResponse.json();
 
-    // Cast request
     const castResponse = await fetch(
       `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}`
     );

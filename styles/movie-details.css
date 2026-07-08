@@ -46,7 +46,6 @@ body {
 
 .movie-details {
   grid-column: span 2;
-  /* padding: 10px; */
 }
 
 .details {
@@ -95,11 +94,7 @@ body {
 .cast-details {
   grid-column: span 3;
 }
-/* .content-child{
-    background-color: rgb(59, 84, 84);
-} */
 
-/* Cast */
 
 .cast-details {
   display: flex;
