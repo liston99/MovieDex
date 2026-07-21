@@ -1,8 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 const searchQuery = params.get("query")
 const cardSection = document.getElementById("cardSection")
+const searchResultTitle = document.getElementById("searchResultTitle");
 
-
+searchResultTitle.textContent = `Search results for "${searchQuery}" `
 
 let fetchedMovies = [];
 async function fetchSearch() {

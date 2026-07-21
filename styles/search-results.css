@@ -26,6 +26,7 @@ body {
 
 .header h1{
     margin-left: 30px;
+    font-size: 1.5rem;
 }
 
 .main-results{
@@ -39,7 +40,6 @@ body {
 }
 
 .card{
-  /* border: 1px solid skyblue; */
   width: 150px;
   height: 250px;
   display: flex;
@@ -78,4 +78,29 @@ body {
 }
 .card-movie-details p{
   font-size: 0.8rem;
+}
+
+@media (max-width: 600px){
+
+  .main{
+    padding: 0 10px;
+    height: 100%;
+}
+  
+.header h1{
+    margin: 10px;
+}
+.main-results{
+  padding: 10px 25px;
+}
+
+.card{
+  width: 150px;
+}
+
+.return{
+  font-size: large;
+  text-align: center;
+  padding: 20px 10px;
+}
 }
