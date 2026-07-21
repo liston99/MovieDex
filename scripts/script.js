@@ -37,6 +37,7 @@ async function fetchBanner() {
 }
 
 async function loadBanner() {
+  // const maxWidth = window.innerWidth <= 600 ? 300 : 150;
   const randomMovie =
     fetchedMovies[Math.floor(Math.random() * fetchedMovies.length)];
 

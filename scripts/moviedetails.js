@@ -57,7 +57,7 @@ function loadMovie(movie) {
     dateObj.getFullYear();
 
   movieGenre.textContent =
-    `${releaseDate} • ${movie.genres
+    `${releaseDate} • ${movie.genres.slice(0, 3)
       .map((genre) => genre.name)
       .join(" • ")}`;
 

@@ -25,7 +25,6 @@ header {
 }
 
 .header-elements {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   display: grid;
@@ -106,7 +105,6 @@ header {
 /* Main Page */
 
 .page-one {
-  /* border: 2px solid blue; */
   height: 89vh;
   display: flex;
   justify-content: center;
@@ -115,7 +113,6 @@ header {
 }
 .banner {
   position: relative;
-  /* border: 2px solid blue; */
   height: 85%;
   width: 90vw;
   border-radius: 30px;
@@ -142,7 +139,7 @@ header {
   position: absolute;
   bottom: 20%;
   z-index: 2;
-  margin: 0 40px;
+  margin: 0 20px;
  
 }
 
@@ -202,9 +199,9 @@ header {
 .card-section {
   height: 88%;
   width: 100%;
-
   padding: 30px 42px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
 }
@@ -273,7 +270,7 @@ footer {
   height: 100%;
   width: 45%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 .footer-links{
   text-align: center;
@@ -285,6 +282,86 @@ footer {
 .footer-links p:nth-child(1){
   font-size: medium;
 }
-.footer-links p:nth-child(2){
-  font-size: small;
+
+
+@media (max-width: 600px){
+
+/* Header */
+  .header-elements h1{
+  font-size: 1.3rem;
+}
+
+.header-elements{
+  grid-template-columns: 40% 60%;
+  padding: 10px;
+}
+
+.header-elements div:nth-child(3){
+  display: none;
+}
+
+/* Banner */
+.banner-movie-buttons button{
+  margin: 0 10px;
+}
+
+.banner-movie-title{
+  font-size: 1.9rem;
+}
+
+.banner-movie-caption{
+  width: 90%;
+}
+
+/* Page 2 */
+
+.top-bar{
+  gap: 10px;
+}
+.top-bar button:nth-child(1),button:nth-child(4) {
+  display: none;
+}
+
+/* Card Section */
+
+.card{
+  width: 146px;
+}
+
+/* Footer */
+
+footer{
+  height: 90px;
+}
+.footer-elements{
+  flex-direction: column;
+}
+
+.footer-logo{
+  padding-top: 10px;
+  width: 100%;
+  height: 50%;
+  align-items: flex-end;
+  /* border: 1px solid red; */
+}
+
+
+.footer-logo h1{
+  font-size: 1.3rem;
+}
+
+.footer-content{
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.footer-links {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 50%;
+}
+
+.footer-links p:nth-child(1){
+  font-size: 13px;
+}
 }
